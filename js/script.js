@@ -1,5 +1,5 @@
 function heightHeader() {
-    window.setTimeout('heightHeader()' , 100);
+    window.setTimeout('heightHeader()' , 200);
 let main = document.querySelector('html');
 let head = document.getElementById('head');
     head.style.height = main.clientHeight+'px';
