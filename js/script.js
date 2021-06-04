@@ -4,7 +4,7 @@ let main = document.querySelector('html');
 let head = document.getElementById('head');
     head.style.height = main.clientHeight+'px';
 };
-function heightHeader()
+heightHeader();
 function backgroundHeader() {
     window.setTimeout('backgroundHeader()' , 7000);
     let i = Math.round(Math.random()*4);
