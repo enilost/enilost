@@ -1,10 +1,11 @@
-
+let main = document.querySelector('html');
+let head = document.getElementById('head');
+head.style.height = main.clientHeight+'px';
 function backgroundHeader() {
     window.setTimeout('backgroundHeader()' , 7000);
     let i = Math.round(Math.random()*4);
     let img = 'img/bitmap_8.png';
-    let head = document.getElementById('head');
-    let main = document.querySelector('html');
+    let header = document.getElementById('head');
     console.log(head);
     if (i == 0) {
         img = 'img/bitmap_8.png';
@@ -21,7 +22,7 @@ function backgroundHeader() {
     if (i == 4) {
         img = 'img/bitmap_39.jpg';
     }
-    head.style.backgroundImage = `url(`+img+`)`;
-    console.log(head.style.backgroundPosition);
+    header.style.backgroundImage = `url(`+img+`)`;
+    console.log(header.style.backgroundPosition);
 };
 backgroundHeader();
