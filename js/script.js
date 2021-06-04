@@ -23,6 +23,7 @@ function backgroundHeader() {
         img = 'img/bitmap_39.jpg';
     }
     header.style.backgroundImage = `url(`+img+`)`;
-    console.log(header.style.backgroundPosition);
+    console.log(header.style.backgroundImage);
+    console.log(head.style.height);
 };
 backgroundHeader();
