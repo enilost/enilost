@@ -3,6 +3,7 @@ function heightHeader() {
 let main = document.querySelector('html');
 let head = document.getElementById('head');
     head.style.height = main.clientHeight+'px';
+    console.log(head.style.height);
 };
 heightHeader();
 function backgroundHeader() {
@@ -10,7 +11,7 @@ function backgroundHeader() {
     let i = Math.round(Math.random()*4);
     let img = 'img/bitmap_8.png';
     let header = document.getElementById('head');
-    console.log(head);
+    console.log(header);
     if (i == 0) {
         img = 'img/bitmap_8.png';
     }
@@ -28,6 +29,5 @@ function backgroundHeader() {
     }
     header.style.backgroundImage = `url(`+img+`)`;
     console.log(header.style.backgroundImage);
-    console.log(head.style.height);
 };
 backgroundHeader();
