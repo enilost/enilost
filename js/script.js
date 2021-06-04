@@ -1,6 +1,10 @@
+function heightHeader() {
+    window.setTimeout('heightHeader()' , 100);
 let main = document.querySelector('html');
 let head = document.getElementById('head');
-head.style.height = main.clientHeight+'px';
+    head.style.height = main.clientHeight+'px';
+};
+function heightHeader()
 function backgroundHeader() {
     window.setTimeout('backgroundHeader()' , 7000);
     let i = Math.round(Math.random()*4);
