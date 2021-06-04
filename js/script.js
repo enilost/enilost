@@ -4,7 +4,7 @@ function backgroundHeader() {
     let img = 'img/bitmap_8.png';
     let head = document.getElementById('head');
     let main = document.querySelector('html');
-    head.style.height = main.clientHeight;
+    head.style.height = main.clientHeight+'px';
     console.log(main.clientHeight);
     console.log(head);
     if (i == 0) {
